@@ -1,0 +1,50 @@
+body {
+/*  max-width: 1200px; */
+}
+.header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: MediumAquamarine;
+}
+
+.nav {
+  display: inline-flex;
+  margin: 10px;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  display: flex;
+  border: 1px solid gray;
+}
+
+.column {
+  display: flex;
+  border: 1px solid gray;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
