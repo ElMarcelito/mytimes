@@ -1,25 +1,40 @@
 body {
 /*  max-width: 1200px; */
 }
-.header {
+
+header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 25px;
-  border-bottom: 1px solid black;
+  padding: 0px 25px 0px 20px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0px 0px 20px 0;
+}
+
+p {
+  display: inline;
+  margin: 0 0 30px 0;
+}
+
+.lt {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
   color: MediumAquamarine;
+  padding-left: 10px;
 }
 
 .nav {
-  display: inline-flex;
+  display: inline-block;
   margin: 10px;
 }
 
@@ -29,22 +44,84 @@ a {
 
 .container {
   display: flex;
-  border: 1px solid gray;
+  border-top: 1px solid black;
+  width: 1200px;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .column {
   display: flex;
   border: 1px solid gray;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .column.large {
   width: 630px;
+  border: 1px solid gray;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column.medium {
   width: 300px;
+  border: 1px solid gray;
 }
 
 .column.small {
   width: 240px;
+  border: 1px solid gray;
+}
+
+.story {
+  display: flex;
+  border: 1px solid gray;
+  flex-wrap: wrap;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.story.main {
+  width: 600px;
+}
+
+.story.image {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.spacer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#phish {
+  background-image: url("../images/img-story-main.png");
+  height: 300px;
+  width: 600px;
+  font-size: 40px;
+}
+
+#earth {
+  background-image: url("../images/img-story-2.png");
+}
+
+#camera {
+  background-image: url("../images/img-story-3.png");
+}
+
+#cats {
+  background-image: url("../images/img-story-1.png");
 }
